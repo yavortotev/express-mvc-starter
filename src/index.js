@@ -32,7 +32,7 @@ async function testFunction() {
 
 
     try {
-        const result = await login('Joxhn','123456')
+        const result = await register('Joxhn','123456')
         
         console.log(result);
 
