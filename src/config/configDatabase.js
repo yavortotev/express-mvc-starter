@@ -11,10 +11,7 @@ async function configDatabse(app) {
 
     const conectionString = 'mongodb://localhost:27017/exam-db'
 
-    await mongoose.connect(conectionString, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    });
+    await mongoose.connect(conectionString);
 
     console.log('Database connected');
 
