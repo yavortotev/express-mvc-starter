@@ -6,13 +6,6 @@ const cookieParser = require('cookie-parser');
 
 function configExpress(app) {
 
-    const hbs = handlebars.create({
-        extname: 'hbs'
-    });
-    
-    app.engine('hbs', hbs.engine);
-    app.set('view engine', 'hbs');
-
     app.use(cookieParser)
        //TODO add session middleware  
     
