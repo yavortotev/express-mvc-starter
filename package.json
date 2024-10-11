@@ -1,0 +1,12 @@
+{
+  "name": "express-mvc-starter",
+  "version": "1.0.0",
+  "description": "Starter template for MVC applications using Express.js, includes Express-Handlebars for templating, Express-Validator for input validation, Bcrypt for password hashing, Mongoose for MongoDB interactions, Jsonwebtoken for authentication, Cookie-Parser for cookie management, and Nodemon for auto-reloading during development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
