@@ -6,7 +6,7 @@ const { Schema, model, Types } = require('mongoose');
 const dataSchema = new Schema({
     prop: {
         type:String,
-        required:true,
+        required:true,   
         
     },
     author: {

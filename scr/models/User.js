@@ -14,6 +14,11 @@ const userSchema = new Schema({
         type:String,
         required:true
     }
+}, {
+    collation: {
+        locale:'us',
+        strength: 2
+    }
 });
 
 const User=model('User', userSchema)
