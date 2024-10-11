@@ -29,14 +29,14 @@ async function login(identity,password) {
     const user = await User.findOne({ [identityName]:identity })
 
     if(!user){
-        throw new Error (`Incorrect username or password`)
+        throw new Error (`Incorrect ${identityName} or password`)
     }
 
 
     const match = await bcrypt.compare(password,user.password)
     
     if(!match){
-        throw new Error (`Incorrect username or password`)
+        throw new Error (`Incorrect ${identityName} or password`)
 
     }
 
