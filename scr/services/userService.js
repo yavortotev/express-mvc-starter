@@ -6,7 +6,7 @@ const identityName= 'email'
 
 async function register(identity,password) {
 
-    const  existing = await User.find({ [identityName]:identity });
+    const  existing = await User.findOne({ [identityName]:identity });
 
     if(existing){
         throw new Error(`This  ${identityName} is already exists`)
